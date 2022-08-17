@@ -6,5 +6,6 @@ public class Main {
 	//Write your code here Group3
         int a= 10;
         System.out.println(a);
+
     }
 }
