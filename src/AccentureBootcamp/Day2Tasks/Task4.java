@@ -14,5 +14,6 @@ public class Task4 {
         System.out.println("Input a whole number: ");
         userNum= in.nextInt();
         System.out.println(userNum % 2 == 0);
+        in.close();
     }
 }

@@ -17,5 +17,6 @@ public class Task3 {
         } else{
             System.out.println("Your number is odd");
         }
+        in.close();
     }
 }

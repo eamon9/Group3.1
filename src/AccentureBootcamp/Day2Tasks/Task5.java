@@ -17,5 +17,6 @@ public class Task5 {
         System.out.println("Enter boolean value: ");
         userB= in.nextBoolean();
         System.out.println(!userB);
+        in.close();
     }
 }

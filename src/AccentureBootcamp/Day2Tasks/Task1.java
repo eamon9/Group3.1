@@ -24,9 +24,10 @@ public class Task1 {
         System.out.println("Enter value b: ");
         b= in.nextInt();
         System.out.println(MathTasks(a, b));
+        in.close();
     }
 
-    public static String MathTasks(int a, int b) {
+    public String MathTasks(int a, int b) {
         String isEqual= "is "+a+" equal to "+b+"? -"+(a==b)+"\n";
         String isLessThan= "is "+a+" less than "+b+"? -"+(a<b)+"\n";
         String isLessOrEqual= "is "+a+" less or equal to "+b+"? -"+(a<=b)+"\n";

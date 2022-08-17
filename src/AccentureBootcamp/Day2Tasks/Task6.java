@@ -26,5 +26,6 @@ public class Task6 {
         b= in.nextInt();
         boolean answer= a == b || a < 0 && b > 0 || a > 100 && b > 100;
         System.out.println("a is "+a+" and b is "+b+" -> "+answer);
+        in.close();
     }
 }

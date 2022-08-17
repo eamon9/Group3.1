@@ -19,5 +19,6 @@ public class Task2 {
         System.out.println("Enter b2: ");
         b2= in.nextBoolean();
         System.out.println("Is "+b1+" and "+b2+" equal? -"+(b1==b2));
+        in.close();
     }
 }
