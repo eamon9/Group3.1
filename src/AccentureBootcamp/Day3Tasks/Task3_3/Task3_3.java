@@ -72,8 +72,13 @@ public class Task3_3 {
                         }
                     }
                 } else if (userChoice == 3) {
+                    double moneyToW;
                     System.out.println("What amount you want to withdraw?: ");
-                    myAccount.withdraw(scan.nextDouble());
+                    moneyToW= scan.nextDouble();
+                    myAccount.withdraw(moneyToW);
+                    if(moneyToW> 5000) {
+                        System.out.println( "Transaction canceled. Max deposit - 5000 | Your deposit: "+myAccount.printBalance());
+                    }
                     f= true;
                     while(f) {
                         System.out.println("Your balance is $" + myAccount.printBalance());
