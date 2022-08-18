@@ -16,8 +16,15 @@ public class Vehicle {
 
     }
 
-    void stop() {
-        System.out.println("The vehicle is stoped");
+    void stop(String gear) {
+        switch (gear) {
+            case "N" -> System.out.println("The vehicle safely stoped");
+            case "1" -> System.out.println("The vehicle safely stoped");
+            case "2" -> System.out.println("The vehicle stopped, but next time be more careful");
+            case "3" -> System.out.println("Be careful, this is not a video game");
+            case "4" -> System.out.println("This could have ended very badly, braking distance more than 200m");
+            case "5" -> System.out.println("Congratulations, you crashed! I hope you have good insurance..");
+        }
     }
 
     void backwards() {
@@ -26,9 +33,11 @@ public class Vehicle {
 
     void steeringWheel(int steering) {
         if(steering> 0) {
-            System.out.println("You stear the wheel right");
-        } else{
-            System.out.println("You stear the wheel left");
+            System.out.println("You stear the wheel right by "+steering+"°");
+        } else if(steering < 0){
+            System.out.println("You stear the wheel left by "+steering+"°");
+        } else if(steering> 190 || steering< -190) {
+            System.out.println("You can't steer more than 190°, it's dangerous");
         }
     }
 }

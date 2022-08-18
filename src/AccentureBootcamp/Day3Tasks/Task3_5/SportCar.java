@@ -1,10 +1,10 @@
 package AccentureBootcamp.Day3Tasks.Task3_5;
 
 public class SportCar extends Car{
-    private String model;
     private String mark;
+    private String model;
     private int year;
-    SportCar(String model, String mark, int year) {
+    SportCar(String mark, String model, int year) {
         this.mark = mark;
         this.model= model;
         this.year= year;
