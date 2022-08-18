@@ -1,7 +1,7 @@
 package AccentureBootcamp;
 
-import AccentureBootcamp.Day2Tasks.*;
-import AccentureBootcamp.Day3Tasks.*;
+import AccentureBootcamp.Day3Tasks.Task3_3.BankAccount;
+import AccentureBootcamp.Day3Tasks.Task3_3.Task3_3;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,8 +12,8 @@ public class Main {
         //new Task5();
         //new Task6();
         //new Task3_1();
-        new Task3_2();
-        //new Task3_3();
+        //new Task3_2();
+        new Task3_3();
         //new Task3_4();
         //new Task3_5();
     }
