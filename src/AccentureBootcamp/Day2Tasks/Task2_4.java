@@ -7,8 +7,8 @@ package AccentureBootcamp.Day2Tasks;
 
 import java.util.Scanner;
 
-public class Task4 {
-    public Task4() {
+public class Task2_4 {
+    public Task2_4() {
         int userNum;
         Scanner in= new Scanner(System.in);
         System.out.println("Input a whole number: ");

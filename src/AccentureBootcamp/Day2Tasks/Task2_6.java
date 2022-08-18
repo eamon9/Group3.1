@@ -16,8 +16,8 @@ import java.util.Scanner;
         a is 101 and b is 102 -> true
         a is 99 and b is 200 -> false
 */
-public class Task6 {
-    public Task6() {
+public class Task2_6 {
+    public Task2_6() {
         Scanner in= new Scanner(System.in);
         int a, b;
         System.out.println("Enter value a: ");

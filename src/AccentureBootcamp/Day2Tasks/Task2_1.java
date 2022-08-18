@@ -15,8 +15,8 @@ import java.util.Scanner;
        is 10 greater or equal to 10? - true
 */
 
-public class Task1 {
-    public Task1() {
+public class Task2_1 {
+    public Task2_1() {
         Scanner in= new Scanner(System.in);
         int a, b;
         System.out.println("Enter value a: ");

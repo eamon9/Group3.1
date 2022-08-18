@@ -10,8 +10,8 @@ import java.util.Scanner;
     Expected output:
         Opposite of "true" is "false"
 */
-public class Task5 {
-    public Task5() {
+public class Task2_5 {
+    public Task2_5() {
         boolean userB;
         Scanner in= new Scanner(System.in);
         System.out.println("Enter boolean value: ");

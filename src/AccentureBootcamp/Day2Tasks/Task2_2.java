@@ -10,8 +10,8 @@ import java.util.Scanner;
     Expected output:
        Is b1 and b2 equal? - false
 */
-public class Task2 {
-    public Task2() {
+public class Task2_2 {
+    public Task2_2() {
         boolean b1, b2;
         Scanner in= new Scanner(System.in);
         System.out.println("Enter b1: ");

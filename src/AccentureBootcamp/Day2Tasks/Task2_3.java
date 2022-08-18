@@ -6,8 +6,8 @@ import java.util.Scanner;
     Hint: use remainder operator to divide number by two and get reminder (if reminder is 0 then it means it is even number)-
     */
 
-public class Task3 {
-    public Task3() {
+public class Task2_3 {
+    public Task2_3() {
         int userNum;
         Scanner in= new Scanner(System.in);
         System.out.println("Input a whole number: ");
