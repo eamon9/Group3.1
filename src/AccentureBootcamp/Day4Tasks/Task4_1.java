@@ -112,6 +112,8 @@ public class Task4_1 {
         colors.trimToSize(); //but I don't get it, what is different without trim...
         getColors(colors, 19);
         //20
+        //colors.ensureCapacity(7);
+        //System.out.println("Size: "+colors.size());
         //Is it possible to change size after initialization?
         //21
         colors.set(4, "SkyBlue");
