@@ -3,7 +3,7 @@ package AccentureBootcamp.Day4Tasks;
 /*
 Linked List
 
-* 1. Write a Java program to append the specified element to the end of a linked list.
+* 1.Write a Java program to append the specified element to the end of a linked list.
 * 2.iterate through all elements in a linked list.
 * 3.iterate through all elements in a linked list starting at the specified position.
 * 4.iterate a linked list in reverse order.
@@ -31,6 +31,7 @@ Linked List
 * 26.replace an element in a linked list.
 */
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 
@@ -144,7 +145,7 @@ public class Task4_2 {
         getList(ll, 18);
 
         //18
-        LinkedList<String> ll3= (LinkedList)ll2.clone();
+        LinkedList ll3= (LinkedList)ll2.clone();
         getList(ll3, 18);
 
         //19
@@ -154,14 +155,57 @@ public class Task4_2 {
         System.out.println("Removed element: "+removedElemet);
         getList(ll, 0);
 
+        //20
+        getList(20);
+        String firstElement= ll.getFirst();
+        System.out.println("First element of string: "+firstElement);
 
+        //21
+        getList(21);
+        String lastElement= ll.getLast();
+        System.out.println("Last element of string: "+lastElement);
 
+        //22
+        getList(22);
+        if(ll.contains("Aligator")) {
+            System.out.println("Yes list contains element");
+        } else{
+            System.out.println("No, element doesn't exist");
+        }
 
+        //23
+        getList(23);
+        ArrayList<String> linkedToArrayList= new ArrayList<>();
+        linkedToArrayList.addAll(ll);
+        System.out.println(linkedToArrayList);
 
+        //24
+        getList(24);
+        System.out.println(ll.containsAll(ll2));
+        System.out.println(ll);
+        System.out.println(ll2);
+        for (int i = 0; i < ll.size(); i++) {
+            if(i> ll2.size()-1) {
+                break;
+            } else {
+                if (ll.contains(ll2.get(i))) {
+                    System.out.println("YES, \"" + ll2.get(i) + "\" are on both lists");
+                } else {
+                    System.out.println("NO, \"" + ll2.get(i) + "\" are not on both lists");
+                }
+            }
+        }
 
+        //25
+        getList(25);
+        if(ll.isEmpty()) {
+            System.out.println("List is empty");
+        } else{
+            System.out.println("List is not empty list consists of "+ll.size()+" elements");
+        }
 
-
-
+        //26
+        ll.set(3, "Superior");
     }
 
     void getList(int task) {

@@ -3,9 +3,7 @@ package AccentureBootcamp;
 import AccentureBootcamp.Day3Tasks.Task3_3.BankAccount;
 import AccentureBootcamp.Day3Tasks.Task3_3.Task3_3;
 import AccentureBootcamp.Day3Tasks.Task3_5.Task3_5;
-import AccentureBootcamp.Day4Tasks.Task4_1;
-import AccentureBootcamp.Day4Tasks.Task4_2;
-import AccentureBootcamp.Day4Tasks.Task4_6;
+import AccentureBootcamp.Day4Tasks.*;
 
 import java.io.IOException;
 
@@ -18,6 +16,7 @@ public class Main {
         //new Task3_5();
         //new Task4_1();
         new Task4_2();
+        new Task4_3();
         //new Task4_6();
     }
 }
