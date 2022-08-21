@@ -1,0 +1,11 @@
+https://www.w3resource.com/java-exercises/collection/index.php
+Collections
+Task4_1 ArrayLists
+Task4_2 LinkedList
+Task4_3 HashSet
+Task4_4 TreeSet
+Task4_5 HashMap
+
+https://www.w3resource.com/java-exercises/io/index.php
+Input/ Output
+Task4_6
