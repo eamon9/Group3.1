@@ -34,6 +34,7 @@ Linked List
 import java.util.LinkedList;
 
 public class Task4_2 {
+
     public Task4_2() {
         LinkedList<String> ll= new LinkedList<>();
         ll.add("Fredy");
