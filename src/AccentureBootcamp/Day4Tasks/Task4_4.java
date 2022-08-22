@@ -23,8 +23,102 @@ TreeSet
 * 16.remove a given element from a tree set.
 */
 
+import java.util.TreeSet;
+
 public class Task4_4 {
     public Task4_4() {
 
+        TreeSet<String> tsColors= new TreeSet<>();
+        tsColors.add("Yellow");
+        tsColors.add("Purple");
+        tsColors.add("Pink");
+        tsColors.add("Red");
+        tsColors.add("SkyBlue");
+        System.out.println("ORIGINAL List of colors: "+tsColors);
+
+        //1
+        tsColors.add("Silver");
+        tsColors.add("Orange");
+        getSet(tsColors, 1);
+
+        //2
+        getSet(2);
+        for (int i = 0; i < tsColors.size(); i++) {
+            System.out.print(tsColors.toArray()[i]+" ");
+        }
+        System.out.println();
+
+        //3
+        getSet(3);
+        TreeSet<String> tsColorsByUser= new TreeSet<>();
+        tsColorsByUser.add("Green");
+        tsColorsByUser.add("Black");
+        tsColorsByUser.add("White");
+        System.out.println("ORIGINAL List of USER colors: "+tsColorsByUser);
+        tsColors.addAll(tsColorsByUser);
+        System.out.println(tsColors);
+
+        //4
+        getSet(4);
+        for (int i = tsColors.size()-1; i >= 0; i--) {
+            System.out.print(tsColors.toArray()[i]+" ");
+        }
+        System.out.println();
+
+        //5
+        getSet(5);
+        System.out.println("First element: "+tsColors.first());
+        System.out.println("Last element: "+tsColors.last());
+
+        //6
+        getSet(6);
+        TreeSet<String> tsClonedSet= (TreeSet)tsColors.clone();
+        System.out.println("Cloned set: "+ tsClonedSet);
+
+        //7
+        getSet(7);
+
+
+        //8
+        getSet(8);
+
+        //9
+        getSet(9);
+
+        //10
+        getSet(10);
+
+        //11
+        getSet(11);
+
+        //12
+        getSet(12);
+
+        //13
+        getSet(13);
+
+        //14
+        getSet(14);
+
+        //15
+        getSet(15);
+
+        //16
+        getSet(16);
+
+    }
+
+    void getSet(int task) {
+        System.out.println(task+".");
+    }
+
+    void getSet(TreeSet treeSet, int task) {
+        if(task!=0) {
+            System.out.println(task + ".");
+        }
+        for (int i = 0; i < treeSet.size(); i++) {
+            System.out.print(treeSet.toArray()[i]+" ");
+        }
+        System.out.println();
     }
 }

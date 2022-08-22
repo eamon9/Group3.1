@@ -16,7 +16,8 @@ public class Main {
         //new Task3_5();
         //new Task4_1();
         //new Task4_2();
-        new Task4_3();
+        //new Task4_3();
+        new Task4_4();
         //new Task4_6();
     }
 }
