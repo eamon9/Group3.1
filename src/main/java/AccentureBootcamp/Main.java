@@ -1,6 +1,7 @@
 package AccentureBootcamp;
 
-import AccentureBootcamp.Day6Tasks.Task6_1.Task6_1;
+import AccentureBootcamp.Day7Tasks.InsertApp;
+import AccentureBootcamp.Day7Tasks.SelectApp;
 
 import java.io.IOException;
 import java.util.logging.Logger;
@@ -10,18 +11,22 @@ public class Main {
     public static void main(String[] args) throws IOException {
         //ConsoleAppender consoleAppender= new ConsoleAppender();
         //consoleAppender.setThreshold(Level.ALL);
-        logger.info("Log some information.");
-        //new Task3_1();
-        //new Task3_2();
-        //new Task3_3();
-        //new Task3_4();
-        //new Task3_5();
-        //new Task4_1();
-        //new Task4_2();
-        ///new Task2_5();
-        ///new Task5_1();
+        //logger.info("Log some information.");
         //new Task4_4();
         //new Task4_6();
-        new Task6_1();
+        //new Task6_1();
+
+        SelectApp selectApp = new SelectApp();
+        //selectApp.selectAll();
+        //selectApp.getCapacityGreaterThan(21.85);
+        //selectApp.getAllFromDestination("media_types");
+        //selectApp.getAllFromDestination("genres");
+
+        InsertApp insertApp= new InsertApp();
+        /*insertApp.insert("MP3");
+        insertApp.insert("AMR");
+        insertApp.insert("AVI");*/
+
+
     }
 }

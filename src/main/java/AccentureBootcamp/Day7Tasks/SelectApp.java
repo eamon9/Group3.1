@@ -37,9 +37,58 @@ public class SelectApp {
         }
     }
 
+    /**
+     * Get the Total whose Total greater than a specified Total
+     * @param capacity
+     */
+    public void getCapacityGreaterThan(double capacity){
+        String sql = "SELECT Invoiceid, BillingCity, BillingCountry, Total "
+                + "FROM invoices WHERE Total > ?";
+
+        try (Connection conn = this.connect();
+             PreparedStatement pstmt  = conn.prepareStatement(sql)){
+
+            // set the value
+            pstmt.setDouble(1,capacity);
+            //
+            ResultSet rs  = pstmt.executeQuery();
+
+            // loop through the result set
+            while (rs.next()) {
+                System.out.println(rs.getInt("Invoiceid") +  "\t||" +
+                        rs.getString("BillingCity") + "\t          ||" +
+                        rs.getString("BillingCountry") + "\t          ||" +
+                        rs.getDouble("Total"));
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void getAllFromDestination(String destination) {
+        String sql = "SELECT * FROM "+destination;
+
+        try (Connection conn = this.connect();
+             Statement stmt  = conn.createStatement();
+             ResultSet rs    = stmt.executeQuery(sql))
+
+        {
+            ResultSetMetaData rsmd = rs.getMetaData();
+            int columnsNumber = rsmd.getColumnCount();
+            while (rs.next()) { //Print one row
+                for(int i = 1 ; i <= columnsNumber; i++){
+                    System.out.print(rs.getString(i) + " "); //Print one element of a row
+                }
+                System.out.println();//Move to the next line to print the next row.
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
     public static void main(String[] args) {
-        SelectApp app = new SelectApp();
-        app.selectAll();
+
     }
 
 }
