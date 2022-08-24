@@ -2,7 +2,7 @@ package AccentureBootcamp.Day2Tasks;
 
 import java.util.Scanner;
 
-/*
+/**
 1) Ask user to input two numbers, compare them and output result:
    Input:
        Enter value a: 10

@@ -1,6 +1,6 @@
 package AccentureBootcamp.Day3Tasks;
 
-/*
+/**
 4) update your solution:
         * Encapsulate the balance property so it is private
         * add to "withdraw" method, so it would be impossible to withdraw

@@ -3,7 +3,7 @@ package AccentureBootcamp.Day3Tasks;
 
 import java.util.Scanner;
 
-/*
+/**
 1) Write a program which creates two dimensional
 // array and stores a multiplication table (from 1 - 10) in it.
     Example of output:

@@ -3,7 +3,7 @@ package AccentureBootcamp.Day3Tasks.Task3_3;
 
 import java.util.Scanner;
 
-/*
+/**
 3) create a class "BankAccount" with property "balance" (should be decimal number)
     * create empty default constructor for it
     * create a constructor with parameter for setting balance.

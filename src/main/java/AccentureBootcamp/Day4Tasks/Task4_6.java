@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
 
-/*
+/**
 INPUT/OUTPUT
 
 * 1. Write a Java program to get a list of all file/directory names from the given.

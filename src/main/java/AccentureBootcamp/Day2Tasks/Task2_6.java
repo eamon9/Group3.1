@@ -3,7 +3,7 @@ package AccentureBootcamp.Day2Tasks;
 import java.util.Scanner;
 
 
-/*
+/**
 6) Write a program which asks the user to input two whole numbers a and b. Output "true", if one of this condition is true:
     1) a and b is equal
     2) a is less than 0 and b is greater than 0

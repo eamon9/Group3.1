@@ -3,7 +3,7 @@ package AccentureBootcamp.Day2Tasks;
 
 import java.util.Scanner;
 
-/*
+/**
 5) Write a program which reads boolean value from user and prints out the opposite value:
     Example input:
         Enter boolean value: true

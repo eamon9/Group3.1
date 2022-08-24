@@ -2,7 +2,7 @@ package AccentureBootcamp.Day4Tasks;
 
 
 
-/*
+/**
 HashMap
 
 * 1. Writes a Java program to associate the specified value with the specified key in a HashMap.

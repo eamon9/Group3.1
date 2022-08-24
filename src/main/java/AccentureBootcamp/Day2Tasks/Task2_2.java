@@ -2,7 +2,7 @@ package AccentureBootcamp.Day2Tasks;
 
 import java.util.Scanner;
 
-/*
+/**
     2) Ask user to input two boolean values and compare them.
     Input:
        Enter b1: true

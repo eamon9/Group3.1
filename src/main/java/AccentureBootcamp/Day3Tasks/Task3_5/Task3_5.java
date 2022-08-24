@@ -1,6 +1,6 @@
 package AccentureBootcamp.Day3Tasks.Task3_5;
 
-/*
+/**
 5) Vehicle
 // Create a base class of a Vehicle,
 // then create a Car class which inherits from the Vehicle class.
