@@ -15,19 +15,21 @@ import java.util.Scanner;
     * method for transfer balance from one bank account to another
 */
 public class Task3_3 {
+    UpdateAccaunt updateMoney = new UpdateAccaunt();
     BankAccount myAccount = new BankAccount();
     BankAccount friendsAccount = new BankAccount(150);
+    ConnectAndSelectAccaunt showAllAcc= new ConnectAndSelectAccaunt();
     public Task3_3() {
         Scanner scan= new Scanner(System.in);
         int userChoice;
         boolean c, d, e, f, g;
-        String friendsID;
+        String friendsID, userName, userAcc;
         System.out.println("Welcome to BankForDummies");
         c= true;
         while(c) {
             try {
-                System.out.println("1. Acount\n2. Deposit\n3. Withdraw \n4. Transfer $$$");
-                System.out.println("Enter choice(1- 4): ");
+                System.out.println("1. Acount\n2. Deposit\n3. Withdraw \n4. Transfer $$$ \n5. Crate Accaunt");
+                System.out.println("Enter choice(1- 5): ");
                 userChoice = scan.nextInt();
 
                 if (userChoice == 1) {
@@ -132,8 +134,20 @@ public class Task3_3 {
                             g = true;
                         }
                     }
-                } else {
-                    System.out.println("Please enter number (1-4)");
+                } else if(userChoice == 5) {
+                    System.out.println("Enter your name: ");
+                    userName= scan.next();
+                    System.out.println("Enter Bank account nr(LV****SB************):");
+                    userAcc= scan.next();
+                    System.out.println("Welcome to BankForDummies");
+                    System.out.println("Account created");
+                    //send data to DATABASE
+                    updateMoney.insert(userName, userAcc);
+                }else if(userChoice == 6){
+                    showAllAcc.showAccounts();
+                    c=false;
+                }else {
+                    System.out.println("Please enter number (1-5)");
                     c=true;
                 }
             } catch (Exception ex) {

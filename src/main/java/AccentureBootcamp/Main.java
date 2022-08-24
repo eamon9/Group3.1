@@ -1,5 +1,7 @@
 package AccentureBootcamp;
 
+import AccentureBootcamp.Day3Tasks.Task3_3.ConnectAndSelectAccaunt;
+import AccentureBootcamp.Day3Tasks.Task3_3.Task3_3;
 import AccentureBootcamp.Day7Tasks.InsertApp;
 import AccentureBootcamp.Day7Tasks.SelectApp;
 
@@ -26,6 +28,11 @@ public class Main {
         /*insertApp.insert("MP3");
         insertApp.insert("AMR");
         insertApp.insert("AVI");*/
+        new Task3_3();
+
+        ConnectAndSelectAccaunt selectapp= new ConnectAndSelectAccaunt();
+        //System.out.println(selectapp.balance);
+        //selectapp.selectBalance();
 
 
     }
